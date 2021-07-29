@@ -495,7 +495,7 @@ public class RNAliOnepassModule extends ReactContextBaseJavaModule implements To
             builder.setAppPrivacyTwo(config.getString(methodName2KeyName("setAppPrivacyTwoName")), config.getString(methodName2KeyName("setAppPrivacyTwoUrl")));
         }
         if (config.hasKey(methodName2KeyName("setAppPrivacyThreeName")) && config.hasKey(methodName2KeyName("setAppPrivacyThreeUrl"))) {
-          builder.setAppPrivacyTwo(config.getString(methodName2KeyName("setAppPrivacyThreeName")), config.getString(methodName2KeyName("setAppPrivacyThreeUrl")));
+          builder.setAppPrivacyThree(config.getString(methodName2KeyName("setAppPrivacyThreeName")), config.getString(methodName2KeyName("setAppPrivacyThreeUrl")));
       }
         if (config.hasKey(methodName2KeyName("setPrivacyState"))) {
             builder.setPrivacyState(config.getBoolean(methodName2KeyName("setPrivacyState")));
