@@ -540,6 +540,11 @@ RCT_EXPORT_METHOD(setDialogUIConfig:(NSDictionary *)config resolve:(RCTPromiseRe
     if (appPrivacyTwoName != nil && appPrivacyTwoUrl != nil) {
         tXCustomModel.privacyTwo = @[appPrivacyTwoName, appPrivacyTwoUrl];
     }
+    NSString *appPrivacyTwoName = [config objectForKey:[self methodName2KeyName:@"setAppPrivacyThreeName"]];
+    NSString *appPrivacyTwoUrl = [config objectForKey:[self methodName2KeyName:@"setAppPrivacyThreeUrl"]];
+    if (appPrivacyTwoName != nil && appPrivacyTwoUrl != nil) {
+        tXCustomModel.privacyTwo = @[appPrivacyTwoName, appPrivacyTwoUrl];
+    }
     NSString *privacyState = [config objectForKey:[self methodName2KeyName:@"setPrivacyState"]];
     if (privacyState != nil) {
         tXCustomModel.checkBoxIsChecked = [privacyState boolValue];

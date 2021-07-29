@@ -65,6 +65,10 @@ export type UIConfig = {
   privacyState?: boolean, // checkBox选中情况
   appPrivacyOneName?: string, // 自定义协议的名称
   appPrivacyOneUrl?: string, // 自定义协议的地址
+  appPrivacyTwoName?: string, // 自定义协议的名称
+  appPrivacyTwoUrl?: string, // 自定义协议的地址
+  appPrivacyThreeName?: string, // 自定义协议的名称
+  appPrivacyThreeUrl?: string, // 自定义协议的地址
   privacyTextSize?: number,
   appPrivacyBaseColor?: string,
   appPrivacyColor?: string,
